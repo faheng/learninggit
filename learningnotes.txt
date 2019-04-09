@@ -40,3 +40,4 @@
   rm <文件名>删除文件
                                     ->删除错误，使用git checkout -- <文件名>来恢复
 
+$ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来连接github
