@@ -56,8 +56,9 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
   git branch //查看当前分支，列出所有分支，当前分支前面有一个*。
 
   git merge dev//将dev分支的工作成果合并到master分支上。
-(Fast-forward)
 
   git branch -d dev//删除dev分支。
+
+  git log --graph//查看分支合并图
 
 
