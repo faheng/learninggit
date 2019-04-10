@@ -59,6 +59,7 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
   git merge dev//将dev分支的工作成果合并到master分支上。
   如果在一个分支上增加并提交了一次修改，然后再另一个分支上增加并提交了修改，合并会产生冲突，
   需要通过手动修改文件得出一个想要的结果，然后增加并提交，即可消除冲突。
+  (fast forward:删除分支后，会丢掉分支信息)
 
   git branch -d dev//删除dev分支。
 
