@@ -67,4 +67,5 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
 
   git log --graph//查看分支合并图
 
+  干活都在dev分支上，dev分支是不稳定的，到某个时候再把dev分支合并到master上。
 
