@@ -42,9 +42,21 @@
 
 $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
  
-  git remote add origin git@githib.com:faheng learninggit.git //关联github
+  git remote add origin git@githib.com:faheng learninggit.git //关联github 
+
   git remote rm origin //取消关联
+
   git push -u origin master //推送至远程库.（-u在第一次推送master分支时需加上） 
+
   git clone git@github.com:faheng/gitskills.git //在github上克隆一个文件到本地库
+
+  git checkout -b dev // 创建dev分支，然后切换到dev分支
+（-b表示创建并切换，相当于以下两条命令：git branch dev , git checkout dev）
+
+  git branch //查看当前分支，列出所有分支，当前分支前面有一个*。
+
+  git merge dev//将dev分支的工作成果合并到master分支上。
+
+  git branch -d dev//删除dev分支。
 
 
