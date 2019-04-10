@@ -61,6 +61,8 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
   需要通过手动修改文件得出一个想要的结果，然后增加并提交，即可消除冲突。
   (fast forward:删除分支后，会丢掉分支信息)
 
+  git merge --no-ff -m "merge with no-ff" dev //合并dev且禁用fast forward，会显示分支信息。
+
   git branch -d dev//删除dev分支。
 
   git log --graph//查看分支合并图
