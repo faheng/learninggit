@@ -3,3 +3,4 @@ git is free software
 git is very good
 git tracks changes.
 I like git very much.
+I'm working hard.
