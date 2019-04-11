@@ -65,6 +65,8 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
 
   git branch -d dev//删除dev分支。
 
+  git branch -D dev//若还未进行合并但是现在不需要dev分支的内容和成果，可以强制删除
+
   git log --graph//查看分支合并图
 
   干活都在dev分支上，dev分支是不稳定的，到某个时候再把dev分支合并到master上。
