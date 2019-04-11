@@ -71,3 +71,11 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
 
   git stash // 把当前工作现场“储藏”起来，等以后恢复现场后继续工作。 
 
+  git stash apply//恢复stash的内容但并不删除，需要用git stash drop来删除
+
+  git stash list//查看stash包含的内容
+
+  git stash drop//恢复的同时也把stash的内容删了。
+
+  git stash apply stash@{0}//恢复stash中指定的内容。
+
