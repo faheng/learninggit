@@ -94,3 +94,5 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
   因为没有指定本地dev和origin/dev的链接，
   可以设置dev和origin/dev的链接（git branch --set-upstream-to=origin/dev dev）.
   再git pull 就可以了。
+
+  git rebase//把分叉的提交历史“整理”成一条直线，看上去更直观，缺点是本地的分叉提交已经被修改
