@@ -65,7 +65,34 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
 
   git branch -d dev//删除dev分支。
 
+  git branch -D dev//若还未进行合并但是现在不需要dev分支的内容和成果，可以强制删除
+
   git log --graph//查看分支合并图
 
   干活都在dev分支上，dev分支是不稳定的，到某个时候再把dev分支合并到master上。
 
+  git stash // 把当前工作现场“储藏”起来，等以后恢复现场后继续工作。 
+
+  git stash apply//恢复stash的内容但并不删除，需要用git stash drop来删除
+
+  git stash list//查看stash包含的内容
+
+  git stash drop//恢复的同时也把stash的内容删了。
+
+  git stash apply stash@{0}//恢复stash中指定的内容。
+
+  git remote -v //显示远程库详细的信息
+（上面显示了可以抓取和推送的origin的地址。如果没有推送权限，就看不到push的地址）。
+
+  推送分支就是把该分支上的所有本地提交推送到远程库，。
+  git push origin dev//将dev分支推送到远程库。
+
+  抓取分支：小伙伴克隆了github的文件，但只能看到本地的master分支，
+  需创建远程origin的dev分支到本地，才能在dev上开发（git checkout -b origin/dev）。
+  若你们恰巧修改了同一个文件，这时推送（git push origin dev）会失败，因为你们的提交有冲突。
+  可以先用git pull把最新的提交从origin/dev抓下来，然后在本地合并解决冲突再推送。若git pull失败
+  因为没有指定本地dev和origin/dev的链接，
+  可以设置dev和origin/dev的链接（git branch --set-upstream-to=origin/dev dev）.
+  再git pull 就可以了。
+
+  git rebase//把分叉的提交历史“整理”成一条直线，看上去更直观，缺点是本地的分叉提交已经被修改
