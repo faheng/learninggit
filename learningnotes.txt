@@ -87,3 +87,10 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
   推送分支就是把该分支上的所有本地提交推送到远程库，。
   git push origin dev//将dev分支推送到远程库。
 
+  抓取分支：小伙伴克隆了github的文件，但只能看到本地的master分支，
+  需创建远程origin的dev分支到本地，才能在dev上开发（git checkout -b origin/dev）。
+  若你们恰巧修改了同一个文件，这时推送（git push origin dev）会失败，因为你们的提交有冲突。
+  可以先用git pull把最新的提交从origin/dev抓下来，然后在本地合并解决冲突再推送。若git pull失败
+  因为没有指定本地dev和origin/dev的链接，
+  可以设置dev和origin/dev的链接（git branch --set-upstream-to=origin/dev dev）.
+  再git pull 就可以了。
