@@ -81,3 +81,9 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
 
   git stash apply stash@{0}//恢复stash中指定的内容。
 
+  git remote -v //显示远程库详细的信息
+（上面显示了可以抓取和推送的origin的地址。如果没有推送权限，就看不到push的地址）。
+
+  推送分支就是把该分支上的所有本地提交推送到远程库，。
+  git push origin dev//将dev分支推送到远程库。
+
