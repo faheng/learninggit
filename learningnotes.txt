@@ -69,3 +69,5 @@ $ ssh-keygen -t rsa -C"1147533837@qq.com" 创建SSH Key来关联github
 
   干活都在dev分支上，dev分支是不稳定的，到某个时候再把dev分支合并到master上。
 
+  git stash // 把当前工作现场“储藏”起来，等以后恢复现场后继续工作。 
+
